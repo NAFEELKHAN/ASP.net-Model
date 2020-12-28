@@ -1,0 +1,27 @@
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Static Data</h1>
+
+@{
+    var User = ViewData.Model;
+}
+
+    <table style="width:100%">
+        <tr>
+            <th>UserId</th>
+            <th>Username</th>
+            <th>Address</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>@User.UserinfoId</td>
+            <td>@User.Username</td>
+            <td>@User.address</td>
+            <td>@User.email</td>
+        </tr>
+    </table>
+
