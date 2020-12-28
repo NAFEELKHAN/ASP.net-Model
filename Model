@@ -1,0 +1,7 @@
+  public int UserinfoId { get; set; }
+
+        public string Username { get; set; }
+
+        public string address { get; set; }
+
+        public string email { get; set; }
